@@ -97,3 +97,15 @@ form >input:focus{
     right:2rem;
     bottom : 4.5rem
 }
+.changerBtn{
+    height:2rem;
+    width:8rem;
+    border-radius:5px;
+    background-color:#747171;
+    color:#fafafa;
+}
+.btnDiv{
+    position:absolute;
+    right:2rem;
+    top : 2rem;
+}

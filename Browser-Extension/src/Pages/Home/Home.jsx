@@ -24,7 +24,6 @@ export const Home = () => {
 
     return(
         <div className="main-container">
-            <h2>Browser Extension</h2>
             <div className="content">
                 <span>Hello! What's your Name ?</span>
                 <form onSubmit={handleFormSubmit}>

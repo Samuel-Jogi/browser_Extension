@@ -116,6 +116,14 @@ const Task = () => {
         // console.log(isTodoOpen);
     }
 
+    const handleNameChangeBtn = () => {
+            extensionDispatch({
+                type:'Name',
+                payload:''
+            })
+            localStorage.setItem('name','')
+    }
+
     return(
         <div className="task-Container">
             <h1>{time}</h1>
@@ -124,6 +132,9 @@ const Task = () => {
         <form onSubmit={handleTaskPage}>
             <span>What's your main focus today ?</span>
             <input  ref={myRef}  className="inputTag" type="text" onKeyUp={handleTaskChange} />
+            <div className="btnDiv">
+            <button className="changerBtn" onClick={handleNameChangeBtn}>Change Name</button>
+            </div>
             {name !== null &&  task !== null ? (           
             <div>
                 <h3>Today's tasks</h3>
