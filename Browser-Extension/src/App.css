@@ -1,42 +1,58 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body{
+  font-family:'Raleway', sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.images{
+  height:100vh;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  display: flex;
+  
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-container{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  gap:9rem;
+  align-items: center;
+  justify-content: flex-start;
+  padding:6rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.main-container h2{
+  font-size:2.5rem;
+  color:#fafafa;
+  line-height:3rem;
 }
 
-.card {
-  padding: 2em;
+.content{
+  display :flex;
+  flex-direction: column;
 }
 
-.read-the-docs {
-  color: #888;
+.content span{
+  font-size:3rem;
+  font-weight:400px;
+  color : #fafafa;
+  line-height:6rem;
+  text-align: center;;
+}
+.content form input{
+  width:40vw;
+  border:none;
+  background-color: transparent;
+  border-bottom: #fafafa 1px solid;
+  height:40px;
+  font-size: 2rem;
+  color: #fafafa;
+  text-align: center;;
+}
+
+.content form input:focus{
+  outline:none;
+  border-bottom: #fafafa 1px solid;
 }

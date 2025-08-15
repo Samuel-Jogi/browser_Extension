@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+
+.todoContainer{
+    position:absolute;
+    right:1rem;
+    bottom:7rem;
+    background-color:#4f97be;
+    padding:1rem; 
+     max-height:  70vw;
+     width:20vw;
+     display:flex;
+     flex-direction:column;
+     align-items:center;
+     overflow:hidden;
+     overflow-y:hidden;
+}
+
+.todoBar{
+    background-color:transparent;
+    width:15vw;
+    border:0px;
+    font-size:1rem;
+    border-bottom:1px solid black;
+    color:#fafafa;
+    cursor:text;
+ 
+}
+.todoBar:focus{
+    outline:none;
+    border:0;
+    border-bottom:1px solid black;
+}
+.todoList{
+    display:flex;
+    gap:4px;
+    flex-direction:column;
+}
+.todoLabel{
+    display:flex;
+    gap:10px;
+    min-width:100%;
+    word-wrap:break-word;
+    font-size:1rem;
+}
+.todoLabel > label{
+    display:flex;
+    gap:6px;
+}
+.cursor:hover{
+    cursor:pointer;
+}
+.todoClear-btn{
+    margin-left:auto;
+    background-color:transparent;
+    border:0;
+}
+.todoCheck{
+    width:1rem;
+    height:1rem;
+}
