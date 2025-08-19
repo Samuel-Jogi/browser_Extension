@@ -1,11 +1,11 @@
 {
     "manifest_version" : 3,
     "name" : "Todo Extension",
-    "Author" : "Samuel Jogi",
+    "author" : "Samuel Jogi",
     "version" : "1.0",
     "description" : "A cool browser extension that let's you to do daily tasks",
     "chrome_url_overrides" : {
-        "new tab" : "/index.html"
+        "newtab" : "/index.html"
     },
     "browser_specific_settings": {
   "gecko": {
